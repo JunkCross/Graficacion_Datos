@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Datos GRAFANA</title>
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class='bx bx-microchip'></i>
+        <span class="logo_name">Datos</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="active">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <nav>
+        <div class="sidebar-button">
+          <i class="bx bx-menu sidebarBtn"></i>
+          <span class="dashboard">Mini-Bioreactor</span>
+        </div>
+      </nav>
+      <div class="home-content">
+        <div class="overview-boxes">
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic"></div>
+              <div class="number" id="temperature">
+                <iframe src="http://localhost:3000/d-solo/adho33kqez668b/prueba-temp-copy?orgId=1&from=now-10s&to=now&refresh=5s&theme=light&panelId=8" width="300" height="90" frameborder="0"></iframe>
+              </div>
+            </div>
+            <i class="bx bxs-thermometer readings"></i>
+          </div>
+          <div class="box">
+            <div class="right-side">
+              <!--<div class="box-topic">Humedad</div>-->
+              <div class="number" id="humidity">
+                <iframe src="http://localhost:3000/d-solo/adho33kqez668b/prueba-temp-copy?orgId=1&from=now-10s&to=now&refresh=5s&theme=light&panelId=9" width="300" height="90" frameborder="0"></iframe>
+              </div>
+            </div>
+            <i class="bx bxs-droplet-half readings two"></i>
+          </div>
+          <div class="box">
+            <div class="right-side">
+              <!--<div class="box-topic">Presión</div>-->
+              <div class="number" id="pressure">
+                <iframe src="http://localhost:3000/d-solo/adho33kqez668b/prueba-temp-copy?orgId=1&from=now-10s&to=now&refresh=5s&theme=light&panelId=10" width="300" height="90" frameborder="0"></iframe>
+              </div>
+            </div>
+            <i class="bx bxs-tachometer readings three"></i>
+          </div>
+          <!--
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Approx Altitude</div>
+              <div class="number" id="altitude"></div>
+            </div>
+            <i class="bx bxs-building readings four"></i>
+          </div>
+          -->
+        </div>
+        <div class="graph-box">
+          <div class="history-charts">
+            <div class="title">History Charts</div>
+            
+            <div class="history-details">
+              <div class="history-col-item">
+                <div id="temperature-history" class="history-divs">
+                  <iframe src="http://localhost:3000/d-solo/adho33kqez668b/prueba-temp-copy?orgId=1&from=now-10s&to=now&refresh=5s&theme=light&panelId=2" width="750" height="200" frameborder="0"></iframe>
+                </div>
+                <div id="humidity-history" class="history-divs">
+                  <iframe src="http://localhost:3000/d-solo/adho33kqez668b/prueba-temp-copy?orgId=1&from=now-10s&to=now&refresh=5s&theme=light&panelId=3" width="750" height="200" frameborder="0"></iframe>
+                </div>
+                <div id="pressure-history" class="history-divs">
+                  <iframe src="http://localhost:3000/d-solo/adho33kqez668b/prueba-temp-copy?orgId=1&from=now-10s&to=now&refresh=5s&theme=light&panelId=6" width="750" height="200" frameborder="0"></iframe>
+                </div>
+              </div>
+              
+              <!--
+              <div class="history-col-item">
+                <div id="pressure-history" class="history-divs"></div>
+                <div id="altitude-history" class="history-divs"></div>
+              </div>
+              -->
+            </div>
+          </div>
+          <div class="gaugeCharts">
+            <div class="title">Gauge Charts</div>
+            <div class="gauge-list">
+              <div class="gauge-box"><div id="temperature-gauge"></div>
+                <iframe src="http://localhost:3000/d-solo/adho33kqez668b/prueba-temp-copy?orgId=1&from=now-10s&to=now&refresh=5s&theme=light&panelId=4" width="450" height="200" frameborder="0"></iframe>
+              </div>
+              <div class="gauge-box"><div id="humidity-gauge"></div>
+                <iframe src="http://localhost:3000/d-solo/adho33kqez668b/prueba-temp-copy?orgId=1&from=now-10s&to=now&refresh=5s&theme=light&panelId=5" width="450" height="200" frameborder="0"></iframe>
+              </div>
+              <div class="gauge-box"><div id="pressure-gauge">
+                <iframe src="http://localhost:3000/d-solo/adho33kqez668b/prueba-temp-copy?orgId=1&from=now-10s&to=now&refresh=5s&theme=light&panelId=7" width="450" height="200" frameborder="0"></iframe>
+              </div>
+
+              </div>
+              <div class="gauge-box"><div id="altitude-gauge"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="static/main.js"></script>
+    
+  </body>
+</html>
